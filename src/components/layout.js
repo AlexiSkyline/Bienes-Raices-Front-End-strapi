@@ -2,6 +2,7 @@ import * as React from 'react'
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { GlobalStyles } from '../styles/GlobalStyles';
+import { Header } from './header';
 
 const Layout = ({ children }) => {
 
@@ -18,7 +19,7 @@ const Layout = ({ children }) => {
             <link href='https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@400;700&display=swap' rel='stylesheet' />
         </Helmet>
 
-        <h1>Mi Sitio en Gatsby</h1>
+        <Header></Header>
 
         { children }
     </>
