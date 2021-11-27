@@ -1,11 +1,14 @@
 import * as React from 'react'
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
+import { GlobalStyles } from '../styles/GlobalStyles';
 
 const Layout = ({ children }) => {
 
   return (
     <>
+        <GlobalStyles />
+
         <Helmet>
             <title>Bienes Raices Gatby</title>
             <meta name='description' content='Sitio web de bienes raices en Gatsby'/>
@@ -14,7 +17,9 @@ const Layout = ({ children }) => {
             <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
             <link href='https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@400;700&display=swap' rel='stylesheet' />
         </Helmet>
+
         <h1>Mi Sitio en Gatsby</h1>
+
         { children }
     </>
   );
