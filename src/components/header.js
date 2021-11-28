@@ -6,7 +6,6 @@ import { Navegacion } from './navegacion';
 import { ContainerHeader } from '../styles/CommonComponents';
 
 export const Header = () => {
-
     const { logo } = useStaticQuery( graphql`
         query {
             logo: file( relativePath: { eq: "logo.svg"} ) {

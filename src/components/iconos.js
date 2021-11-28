@@ -3,7 +3,6 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { ListadoIconos } from '../styles/CommonComponents';
 
 export const Iconos = ({ wc, estacionamiento, habitaciones }) => {
-
     const { iconos } = useStaticQuery(graphql`
         query {
             iconos: allFile( filter: { relativeDirectory: { eq: "iconos" } } ) {

@@ -7,7 +7,6 @@ import { PropiedadPreview } from './propiedadPreview';
 import { useFiltro } from '../hooks/useFiltro';
 
 export const ListadoPropiedades = () => {
-
     const resultado = usePropiedades();
     const [ propiedades ] = useState(resultado);
     const [ filtradas, setFiltradas ] = useState([]);

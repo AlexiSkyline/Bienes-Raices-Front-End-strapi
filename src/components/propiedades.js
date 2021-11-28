@@ -33,7 +33,6 @@ export const query = graphql(`
 `);
 
 export const propiedades = ({ data: { allStrapiPropiedades: { nodes } } }) => {
-
     const { nombre, descripcion, wc, estacionamiento, habitaciones, agentes, imagen, precio } = nodes[0]
 
     return (

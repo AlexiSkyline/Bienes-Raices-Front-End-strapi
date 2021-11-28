@@ -3,7 +3,6 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { BottomBanner } from '../styles/CommonComponents';
 
 export const Encuentra = () => {
-
     const { imagen } = useStaticQuery(graphql`
         query {
             imagen: file ( relativePath: { eq: "encuentra.jpg" } ) {

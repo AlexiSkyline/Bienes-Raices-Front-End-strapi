@@ -5,7 +5,6 @@ import { GlobalStyles } from '../styles/GlobalStyles';
 import { Header } from './header';
 
 const Layout = ({ children }) => {
-
   return (
     <>
         <GlobalStyles />
