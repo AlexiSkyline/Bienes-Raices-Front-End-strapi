@@ -178,3 +178,33 @@ export const ListadoIconos = styled.ul`
         }
     }
 `;
+
+export const ContenidoPropiedad = styled.div`
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 95%;
+
+    @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 5rem;
+    }
+`;
+
+export const Sidebar = styled.aside`
+    .precio {
+        font-size: 2rem;
+        color: #75AB00;
+    }
+    .agente {
+        margin-top: 4rem;
+        border-radius: 2rem;
+        background-color:  #75AB00;
+        padding: 3rem;
+        color: #FFF;
+
+        p {
+            margin: 0;
+        }
+    }
+`;
