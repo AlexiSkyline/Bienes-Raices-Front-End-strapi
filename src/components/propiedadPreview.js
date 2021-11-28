@@ -23,10 +23,10 @@ export const PropiedadPreview = ({ propiedad }) => {
                     estacionamiento={estacionamiento}
                     habitaciones={habitaciones}
                 />
+
                 <Boton to={ urlSlug( nombre ) }>
                     Visitar Propiedad
                 </Boton>
-
             </Contenido>
         </Card>
     );
