@@ -6,6 +6,7 @@ import { Encuentra } from '../components/encuentra';
 import { useInicio } from '../hooks/useInicio';
 
 import { ImagenBackground, MainIndex } from '../styles/CommonComponents';
+import { ListadoPropiedades } from '../components/listadoPropiedades';
 
 const IndexPage = () => {
 
@@ -28,6 +29,8 @@ const IndexPage = () => {
         </MainIndex>
 
         <Encuentra />
+
+        <ListadoPropiedades />
     </Layout>
   );
 }
