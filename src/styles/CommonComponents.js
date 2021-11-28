@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { Link } from 'gatsby';
+import BackgroundImage from 'gatsby-background-image';
 
 export const ContainerHeader = styled.header`
     background-color: #0D283B;
@@ -43,5 +44,41 @@ export const NavLink = styled( Link )`
 
     &.pagina-actual {
         border-bottom: 2px solid #FFF;
+    }
+`;
+
+export const ImagenBackground = styled( BackgroundImage )`
+    height: 600px;
+
+    div {
+        color: #FFF;
+        height: 100%;
+        max-width: 1200px;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin: 0;
+        max-width: 800px;
+
+        @media ( min-width: 992px ) {
+            font-size: 4rem;
+        }
+    }
+`;
+
+export const MainIndex = styled.main`
+    div {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    p {
+        text-align: center;
     }
 `;
