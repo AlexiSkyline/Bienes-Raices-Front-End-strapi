@@ -1,7 +1,11 @@
 import * as React from 'react';
+
 import Layout from '../components/layout';
+import { Encuentra } from '../components/encuentra';
+
 import { useInicio } from '../hooks/useInicio';
-import { ImagenBackground } from '../styles/CommonComponents';
+
+import { ImagenBackground, MainIndex } from '../styles/CommonComponents';
 
 const IndexPage = () => {
 
@@ -22,6 +26,8 @@ const IndexPage = () => {
                 <p>{ contenido }</p>
             </div>
         </MainIndex>
+
+        <Encuentra />
     </Layout>
   );
 }

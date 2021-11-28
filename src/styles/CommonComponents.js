@@ -77,8 +77,33 @@ export const MainIndex = styled.main`
         max-width: 800px;
         margin: 0 auto;
     }
-    
+
     p {
         text-align: center;
+    }
+`;
+
+export const BottomBanner = styled( BackgroundImage )`
+    height: 300px;
+
+    div {
+        color: #FFF;
+        height: 100%;
+        max-width: 1200px;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h3 {
+        font-size: 2rem;
+        margin: 0;
+        max-width: 800px;
+
+        @media ( min-width: 992px ) {
+            font-size: 4rem;
+        }
     }
 `;
